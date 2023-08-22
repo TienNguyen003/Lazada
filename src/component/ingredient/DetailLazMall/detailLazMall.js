@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 import { nameProduct } from '../CategoryList/CategoryList';
 import { apiProduct } from '../../../api/apiProductCate';
+import { ListIcon, DownIcon } from '../../icons/icon';
 import category from '../../../api/apiCategory';
-import { ListIcon } from '../../icons/icon';
 import styles from './DetailLazMall.module.scss';
 import WantToo from '../../layout/WantToo/wantToo';
 
@@ -99,12 +99,99 @@ function DetailLazMall() {
             <div className={cx('content')}>
                 <div className={cx('category')}>
                     <div className={cx('cate-item')}>
-                        <ListIcon />
-                        <p>Tất cả Danh mục</p>
+                        <ListIcon className={cx('icon-cate')} />
+                        <p className={cx('txt-cate')}>Tất cả Danh mục</p>
                     </div>
                     <div className={cx('cate-list')}>
-                        <p>{nameProduct.replace('amp;', ' ')}</p>
-                        {arrCate != undefined && arrCate.children.map((item) => console.log(item))}
+                        <p className={cx('name-cate')}>{nameProduct.replace('amp;', ' ')}</p>
+                        {arrCate != undefined &&
+                            arrCate.children.map((item) => (
+                                <p className={cx('cate-children')} key={item.catid}>
+                                    {item.display_name}
+                                </p>
+                            ))}
+                    </div>
+                    <div className={cx('location-filter')}>
+                        <p className={cx('filter-header')}>Nơi Bán</p>
+                        <div className={cx('filter-group')}>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> TP. Hồ Chí Minh
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Bắc Ninh
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Hà Nội
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Hải Phòng
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Vĩnh Phúc
+                            </div>
+                            <div className={cx('check-box')}>
+                                Khác <DownIcon className={cx('icon-down')}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={cx('location-filter')}>
+                        <p className={cx('filter-header')}>Đơn vị vận chuyển</p>
+                        <div className={cx('filter-group')}>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Hỏa Tốc
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Nhanh
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Tiết kiệm
+                            </div>
+                        </div>
+                    </div>
+                    <div className={cx('location-filter')}>
+                        <p className={cx('filter-header')}>Loại Shop</p>
+                        <div className={cx('filter-group')}>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Shop Yêu Thích +
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Shopee Mall
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Shop Yêu thích
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Xử lý đơn hàng bởi Shopee
+                            </div>
+                        </div>
+                    </div>
+                    <div className={cx('location-filter')}>
+                        <p className={cx('filter-header')}>Tình Trạng</p>
+                        <div className={cx('filter-group')}>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Mới
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Đã sử dụng
+                            </div>
+                        </div>
+                    </div>
+                    <div className={cx('location-filter')}>
+                        <p className={cx('filter-header')}>Dịch Vụ & Khuyến Mãi</p>
+                        <div className={cx('filter-group')}>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Voucher Xtra
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Đang giảm giá
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Miễn phí vận chuyển
+                            </div>
+                            <div className={cx('check-box')}>
+                                <input type="checkbox" /> Gì Cũng Rẻ
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={cx('card')}>
