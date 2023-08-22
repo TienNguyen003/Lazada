@@ -1,5 +1,5 @@
 const routes = {
-    Home: '/',
+    Home: '/Lazada',
     Login: '/Login',
     Register: '/Register',
     SalesTogether: '/SalesTogether',
