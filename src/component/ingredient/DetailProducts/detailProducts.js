@@ -5,9 +5,9 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import api from '../../../api/api';
-import { apiProduct } from '../../../api/apiProductCate';
 import ButtonCustom from '../../layout/Button/button';
-import { ApartIcon, HeartIcon, PlusIcon, StarIcon } from '../../icons/icon';
+import { apiProduct } from '../../../api/apiProductCate';
+import { ApartIcon, CartIcon, HeartIcon, PlusIcon, StarIcon, ShopIcon } from '../../icons/icon';
 import styles from './detailProducts.module.scss';
 
 const cx = classNames.bind(styles);
@@ -281,12 +281,12 @@ function DetailProducts() {
                     <p className={cx('online')}>Online 25 Phút Trước</p>
                     <div className={cx('fc')}>
                         <div className={cx('chat')}>
-                            <img src="" alt="" />
-                            <p>Chat Ngay</p>
+                            <CartIcon />
+                            <p className={cx('txt-shop')}>Chat Ngay</p>
                         </div>
                         <div className={cx('view')}>
-                            <img src="" alt="" />
-                            <p>Xem Shop</p>
+                            <ShopIcon />
+                            <p className={cx('txt-shop')}>Xem Shop</p>
                         </div>
                     </div>
                 </div>
