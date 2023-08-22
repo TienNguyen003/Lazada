@@ -1,0 +1,123 @@
+.register {
+    margin: 0 350px;
+    padding: 60px 0;
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #424242;
+}
+.transfer {
+    font-size: 1.5rem;
+    color: #757575;
+}
+.trans-res {
+    color: #89cff5 !important;
+}
+
+// ----------------------------------------------------------------
+.form-res {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    width: 838px;
+    height: 450px;
+    background-color: #fff;
+}
+.normally {
+    width: 380px;
+}
+.user,
+.pass {
+    height: 78px;
+}
+.txtName {
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    color: #424242;
+    display: block;
+    margin-bottom: 5px;
+}
+.ip-name,
+.ip-pass {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px \0;
+    padding: 0 35px 0 10px;
+    margin-bottom: 2px;
+    outline: none;
+}
+.forgot {
+    float: right;
+    color: #049cb9;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.third-party {
+    width: 305px;
+}
+.btn-log,
+.fb,
+.gg {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    color: #fff !important;
+}
+.btn-log {
+    display: flex;
+    align-items: center;
+    width: 305px;
+    height: 48px;
+    background-color: #f57224;
+}
+.fb {
+    height: 40px;
+    background-color: #3b5998;
+}
+.gg {
+    height: 40px;
+    background-color: #d34836;
+}
+.email {
+    margin: 5px 0 0 0 !important;
+    width: 305px;
+    height: 40px;
+    color: #fe2c55;
+}
+.txt-third {
+    margin: 8px 0;
+    width: 305px;
+    color: #757575;
+    font-size: 1.4rem;
+}
+.check {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+.txtYes,
+.policy {
+    color: #757575;
+    font-size: 1.3rem;
+}
+.link {
+    color: #049cb9 !important;
+}
+.social-network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}

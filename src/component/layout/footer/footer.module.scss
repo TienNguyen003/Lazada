@@ -1,0 +1,88 @@
+.footer {
+    margin: 20px 0;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 160px;
+}
+.img-banner {
+    width: 388px;
+    cursor: pointer;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 160px 0;
+}
+.downapp {
+    width: 600px;
+}
+.img-down {
+    cursor: pointer;
+}
+.txtC {
+    margin-left: 5px;
+    width: 200px;
+}
+.red-color {
+    color: #f36f36;
+}
+.down,
+.down-banner,
+.down-icon {
+    display: flex;
+    align-items: center;
+}
+.imgdown-banner {
+    width: 126px;
+    cursor: pointer;
+}
+.down-banner {
+    flex-wrap: wrap;
+}
+.margin-left {
+    margin-left: 5px;
+}
+.margin-top {
+    margin-top: 5px;
+}
+.address {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+.titleC {
+    font-size: 1.6rem;
+    color: #0f136d;
+}
+.txtContent {
+    font-size: 1.3rem;
+    color: #0f136d;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.intro-laza {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 160px;
+}
+.intro,
+.genuine,
+.outstan {
+    width: 30%;
+    text-align: justify;
+}
+.txtIntro,
+.txtGenuine,
+.txtOutstan {
+    font-size: 1.6rem;
+    color: #606060;
+    font-weight: 700;
+}
+.contentTxt {
+    color: rgb(136, 136, 136);
+    font-size: 1.3rem;
+}

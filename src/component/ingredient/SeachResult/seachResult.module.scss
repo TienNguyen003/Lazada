@@ -1,0 +1,112 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 164px;
+    padding: 20px 0;
+}
+.card-items{
+    margin-bottom: 20px;
+    width: 16%;
+    margin-right: 8px;
+}
+.card-item{
+    vertical-align: top;
+    width: 189px;
+    min-height: 189px;
+    height: 100%;
+    background: #fff;
+
+    &:hover{
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+    }
+}
+.img-background{
+    width: 100%;
+}
+.imageBg{
+    width: 100%;
+}
+.segment--icon{
+    display: block;
+    height: 14px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.imageLaz{
+    display: inline-block;
+    min-width: 12px;
+    height: 12px;
+}
+.card-title{
+    display: -webkit-box;
+    position: relative;
+    line-height: 18px;
+    height: 36px;
+    font-size: 1.4rem;
+    color: #212121;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.mod-price{
+    margin-top: 4px;
+}
+.mod-first-line{
+    line-height: 22px;
+    height: 22px;
+    font-size: 1.8rem;
+    color: #f57224;
+}
+.mod-price-second{
+    margin-top: 4px;
+    margin-right: 4px;
+    line-height: 14px;
+    height: 14px;
+    font-size: 1.2rem;
+    color: #9e9e9e;
+}
+.second-price{
+    text-decoration: line-through;
+}
+.card-footer{
+    margin-top: 8px;
+    height: 14px;
+}
+.card-ratings{
+    font-size: 1.2rem;
+    color: #9e9e9e;
+}
+.item-desc{
+    padding: 4px 8px 12px;
+}
+.btncus{
+    display: block;
+    margin: 20px auto 9px;
+    width: 387px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #1a9cb8;
+    font-family: Roboto-Medium;
+    border: 1px solid #1a9cb8;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin:  0 175px 0 164px;
+    padding-top: 20px;
+}
+.icon-roomy{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.icon-list{
+    color: #dadada;
+    cursor: pointer;
+}

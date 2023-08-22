@@ -1,0 +1,61 @@
+.paymentOrder {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 250px;
+    padding-bottom: 20px;
+}
+.primary {
+    width: 676px;
+}
+.payment {
+    padding-top: 40px;
+}
+.title {
+    padding: 30px 0 15px;
+    line-height: 42px;
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #111;
+}
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 48px;
+}
+.txt {
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #111;
+}
+.viewMore {
+    line-height: 23px;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #1e71ff;
+    transition: opacity 0.35s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.content {
+    margin: 10px 0;
+    padding: 12px;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover .text-content {
+        color: #1e71ff;
+    }
+}
+.text-content {
+    line-height: 19px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #111;
+    transition: color 0.35s ease-in-out;
+}

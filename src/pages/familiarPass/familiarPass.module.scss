@@ -1,0 +1,63 @@
+.familiar {
+    margin: 0 350px;
+    padding: 60px 0;
+}
+.title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #424242;
+}
+.transfer {
+    font-size: 1.5rem;
+    color: #757575;
+}
+.trans-res {
+    color: #89cff5 !important;
+}
+
+// form
+.form-familiar {
+    margin-top: 30px;
+    padding: 40px;
+    width: 838px;
+    height: 260px;
+    background-color: #fff;
+}
+.normally {
+    width: 380px;
+}
+.title-form{
+    margin-bottom: 20px;
+}
+.user{
+    height: 78px;
+}
+.txtName {
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    color: #424242;
+    display: block;
+    margin-bottom: 5px;
+}
+.ip-name {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px \0;
+    padding: 0 35px 0 10px;
+    margin-bottom: 2px;
+    outline: none;
+}
+.forgot{
+    color: #049cb9 !important;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.slide{
+    margin: 10px 0;
+    height: 40px;
+}

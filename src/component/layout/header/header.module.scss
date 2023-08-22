@@ -1,0 +1,191 @@
+.links-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 200px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.spare,
+.sell {
+    color: #0f1568 !important;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+        color: #f36d00;
+    }
+}
+.login,
+.register,
+.select,
+.care,
+.check {
+    color: #9e9e9e !important;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+        color: #f36d00 !important;
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 160px;
+}
+.icon-img {
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    align-items: center;
+    width: 690px;
+    height: 50px;
+    background-color: #eff0f5;
+}
+.search-ip {
+    padding-left: 10px;
+    width: 670px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 1.7rem;
+}
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    background-color: #f5722f;
+    color: #fff;
+    cursor: pointer;
+}
+.cart-img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+// spare
+.show-clickSpare {
+    display: none;
+    position: absolute;
+    top: 39px;
+    left: 100px;
+    padding: 20px;
+    width: 400px;
+    z-index: 10;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.show-clickSpare::before {
+    content: '';
+    position: absolute;
+    top: -6.5px;
+    left: 200px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-width: 1px;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-color: #bfbfbf;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.title-click {
+    color: #000;
+}
+.infoSpare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+.dowapp-benefits {
+    width: 50%;
+    color: #199cb7;
+    font-size: 1.3rem;
+}
+.ip-exp {
+    padding: 5px 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.header__down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+.google {
+    width: 160px;
+    height: 48px;
+}
+.appstore {
+    width: 160px;
+    height: 50px;
+}
+.nameME {
+    color: #f36d00;
+    text-align: center;
+}
+
+// care
+.show-care {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-65%);
+    padding: 10px 15px;
+    width: 240px;
+    border:1px solid #bfbfbf;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.show-care::before {
+    content: '';
+    position: absolute;
+    top: -6.5px;
+    left: 50%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-width: 1px;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-color: #bfbfbf;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.custom-info {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.icon-show{
+    width: 20px;
+}
+.txtCus {
+    margin-left: 8px;
+    width: 180px;
+    color: #6e686e;
+
+    &:hover {
+        text-decoration: underline;
+        color: #f36d00;
+        cursor: pointer;
+    }
+}
+
+.visible {
+    display: block;
+    z-index: 10;
+}

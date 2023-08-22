@@ -1,0 +1,62 @@
+.txt-header{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    color: #424242;
+}
+.more{
+    color: #1A9CB7;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.shopmall{
+    display: block;
+    position: relative;
+    width: 188px;
+    height: 270px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+    }
+}
+.img-mall{
+    width: 188px;
+    height: 188px;
+    background-color: #f5f5f5;
+}
+.img{
+    position: relative;
+    margin: -25px auto 0;
+    width: 52px;
+    height: 52px;
+    padding: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+
+    .img-small{
+        width: 100%;
+    }
+}
+.txt-name{
+    margin: 8px 8px 4px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 1.4rem;
+    color: #212121;
+}
+.txt-nickname{
+    margin: 0 8px;
+    text-align: center;
+    line-height: 14px;
+    font-size: 1.2rem;
+    color: #9e9e9e;
+}
