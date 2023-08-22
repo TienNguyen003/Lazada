@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import api from '../../../api/api';
 import ButtonCustom from '../../layout/Button/button';
 import { apiProduct } from '../../../api/apiProductCate';
-import { ApartIcon, CartIcon, HeartIcon, PlusIcon, StarIcon, ShopIcon } from '../../icons/icon';
+import { ApartIcon, CartIcon, HeartIcon, PlusIcon, StarIcon, ShopIcon, DownIcon } from '../../icons/icon';
 import styles from './detailProducts.module.scss';
 
 const cx = classNames.bind(styles);
@@ -177,10 +177,12 @@ function DetailProducts() {
                                 <div className={cx('address-to')}>
                                     <div className={cx('txt-transto')}>Vận chuyển tới</div>
                                     <p className={cx('address')}>Phường Cầu Diễn, Quận Nam Từ Liêm</p>
+                                    <DownIcon className={cx('icon-down')}/>
                                 </div>
                                 <div className={cx('address-to')}>
                                     <div className={cx('txt-transto')}>Phí vận chuyển</div>
                                     <div className={cx('price-trans')}>₫20.925 - ₫28.700</div>
+                                    <DownIcon className={cx('icon-down')}/>
                                 </div>
                             </div>
                         </div>
