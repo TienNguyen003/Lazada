@@ -1,9 +1,13 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable array-callback-return */
 import classNames from 'classnames/bind';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import { nameProduct } from '../CategoryList/CategoryList';
 import { apiProduct } from '../../../api/apiProductCate';
+import category from '../../../api/apiCategory';
+import { ListIcon } from '../../icons/icon';
 import styles from './DetailLazMall.module.scss';
 import WantToo from '../../layout/WantToo/wantToo';
 
@@ -11,13 +15,17 @@ const cx = classNames.bind(styles);
 
 function DetailLazMall() {
     let arr = [];
+    let arrCate = [];
     const url = useLocation().pathname.replace('/DetailLazMall/@', '');
 
-    // eslint-disable-next-line array-callback-return
     apiProduct.map((item) => {
-        // eslint-disable-next-line eqeqeq
         if (item.data.id == url) {
             arr = item.data.item;
+        }
+    });
+    category.map((item) => {
+        if (item.catid == url) {
+            arrCate = item;
         }
     });
 
@@ -89,77 +97,96 @@ function DetailLazMall() {
             </div>
             <h3 className={cx('nameProduct')}>{nameProduct.replace('amp;', ' ')}</h3>
             <div className={cx('content')}>
-                {arr.length > 0
-                    ? arr.map((item) => {
-                          return (
-                              <div className={cx('card-items')} key={item.itemid}>
-                                  <Link to={`/ProductsResults/@${item.itemid}`}>
-                                      <div className={cx('card-item')}>
-                                          <div className={cx('img-background')}>
-                                              <img
-                                                  className={cx('imageBg')}
-                                                  src={'https://down-vn.img.susercontent.com/file/' + item.image}
-                                                  alt={item.name}
-                                              />
-                                          </div>
-
-                                          <div className={cx('item-desc')}>
-                                              <div className={cx('desc-segment')}>
-                                                  <div className={cx('segment-icon')}>
-                                                      <img
-                                                          className={cx('imageLaz')}
-                                                          src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png"
-                                                          alt=""
-                                                      />
-                                                      <span className={cx('segment-text')}></span>
-                                                  </div>
+                <div className={cx('category')}>
+                    <div className={cx('cate-item')}>
+                        <ListIcon />
+                        <p>Tất cả Danh mục</p>
+                    </div>
+                    <div className={cx('cate-list')}>
+                        <p>{nameProduct.replace('amp;', ' ')}</p>
+                        {arrCate != undefined && arrCate.children.map((item) => console.log(item))}
+                    </div>
+                </div>
+                <div className={cx('card')}>
+                    <div className={cx('card-items')}>
+                        {arr.length > 0
+                            ? arr.map((item) => {
+                                  return (
+                                      <Link
+                                          to={`/ProductsResults/@${item.itemid}`}
+                                          key={item.id}
+                                          className={cx('product-item')}
+                                      >
+                                          <div className={cx('card-item')}>
+                                              <div className={cx('img-background')}>
+                                                  <img
+                                                      className={cx('imageBg')}
+                                                      src={'https://down-vn.img.susercontent.com/file/' + item.image}
+                                                      alt={item.name}
+                                                  />
                                               </div>
 
-                                              <div className={cx('card-title')}>
-                                                  <span className={cx('title-txt')}>{item.name}</span>
-                                              </div>
-
-                                              <div className={cx('mod-price')}>
-                                                  <div className={cx('mod-first-line')}>
-                                                      <span className={cx('price')}>
-                                                          {parseInt(item.price.toString().slice(0, -5)).toLocaleString(
-                                                              'vi-VN',
-                                                          )}
-                                                      </span>
-                                                      <span className={cx('currency')}> ₫</span>
+                                              <div className={cx('item-desc')}>
+                                                  <div className={cx('desc-segment')}>
+                                                      <div className={cx('segment-icon')}>
+                                                          <img
+                                                              className={cx('imageLaz')}
+                                                              src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png"
+                                                              alt=""
+                                                          />
+                                                          <span className={cx('segment-text')}></span>
+                                                      </div>
                                                   </div>
 
-                                                  <div className={cx('mod-price-second')}>
-                                                      <span className={cx('mod-price-text')}>
-                                                          <span className={cx('second-price')}>
-                                                              {Math.round(
-                                                                  parseInt(
-                                                                      item.price_before_discount
-                                                                          .toString()
-                                                                          .slice(0, -5),
-                                                                  ) /
-                                                                      (1 - item.raw_discount / 100),
+                                                  <div className={cx('card-title')}>
+                                                      <span className={cx('title-txt')}>{item.name}</span>
+                                                  </div>
+
+                                                  <div className={cx('mod-price')}>
+                                                      <div className={cx('mod-first-line')}>
+                                                          <span className={cx('price')}>
+                                                              {parseInt(
+                                                                  item.price.toString().slice(0, -5),
                                                               ).toLocaleString('vi-VN')}
                                                           </span>
-                                                          <span className={cx('second-currency')}> ₫</span>
-                                                      </span>
-                                                      <span className={cx('mod-discount')}> {item.raw_discount}%</span>
-                                                  </div>
-                                              </div>
+                                                          <span className={cx('currency')}> ₫</span>
+                                                      </div>
 
-                                              <div className={cx('card-footer')}>
-                                                  <div className={cx('card-ratings')}>
-                                                      Đã bán {item.global_sold_count}
+                                                      <div className={cx('mod-price-second')}>
+                                                          <span className={cx('mod-price-text')}>
+                                                              <span className={cx('second-price')}>
+                                                                  {Math.round(
+                                                                      parseInt(
+                                                                          item.price_before_discount
+                                                                              .toString()
+                                                                              .slice(0, -5),
+                                                                      ) /
+                                                                          (1 - item.raw_discount / 100),
+                                                                  ).toLocaleString('vi-VN')}
+                                                              </span>
+                                                              <span className={cx('second-currency')}> ₫</span>
+                                                          </span>
+                                                          <span className={cx('mod-discount')}>
+                                                              {' '}
+                                                              {item.raw_discount}%
+                                                          </span>
+                                                      </div>
                                                   </div>
+
+                                                  <div className={cx('card-footer')}>
+                                                      <div className={cx('card-ratings')}>
+                                                          Đã bán {item.global_sold_count}
+                                                      </div>
+                                                  </div>
+                                                  <div className={cx('location')}>{item.shop_location}</div>
                                               </div>
-                                              <div className={cx('location')}>{item.shop_location}</div>
                                           </div>
-                                      </div>
-                                  </Link>
-                              </div>
-                          );
-                      })
-                    : ''}
+                                      </Link>
+                                  );
+                              })
+                            : ''}
+                    </div>
+                </div>
             </div>
             <WantToo />
         </div>

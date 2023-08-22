@@ -1,7 +1,6 @@
 const category = [
     {
         catid: 11035567,
-
         name: 'Men Clothes',
         display_name: 'Thời Trang Nam',
         image: '687f3967b7c2fe6a134a2c11894eea4b',
