@@ -5,13 +5,12 @@
     padding: 20px 0;
 }
 .card-items{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 16%;
     margin-right: 8px;
 }
 .card-item{
     vertical-align: top;
-    width: 189px;
     min-height: 189px;
     height: 100%;
     background: #fff;
@@ -20,11 +19,8 @@
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
     }
 }
-.img-background{
-    width: 100%;
-}
 .imageBg{
-    width: 100%;
+    width: 189px;
 }
 .segment--icon{
     display: block;
@@ -107,6 +103,18 @@
     cursor: pointer;
 }
 .icon-list{
-    color: #dadada;
     cursor: pointer;
+}
+.active{
+    color: #dadada;
+}
+.active-content{
+    display: block;
+}
+.active-cards{
+    width: unset;
+}
+.active-card{
+    display: flex;
+    padding: 10px;
 }

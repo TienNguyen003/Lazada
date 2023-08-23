@@ -14,12 +14,40 @@ const cx = classNames.bind(styles);
 function SearchResult() {
     const url = decodeURIComponent(useLocation().pathname.replace('/SearchResults/@', ''));
 
+    const handleClickListIcon = (e) => {
+        const roomy = document.querySelector('.seachResult_icon-roomy__DPPDc')
+        roomy.classList.add('seachResult_active__hHJ3F')
+        e.target.classList.remove('seachResult_active__hHJ3F')
+        const content = document.querySelector('.seachResult_content__XM8ab');
+        content.classList.add('seachResult_active-content__qUVIw');
+        const cards = content.querySelectorAll('.seachResult_card-items__JEtOF');
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].classList.add('seachResult_active-cards__YqVcW');
+            const card = cards[i].querySelector('.seachResult_card-item__LVNjM')
+            card.classList.add('seachResult_active-card__tEn3o')  
+        }
+    };
+
+    const handleClickRoomy = (e) => {
+        const roomy = document.querySelector('.seachResult_icon-list__IprHl')
+        roomy.classList.add('seachResult_active__hHJ3F')
+        e.target.classList.remove('seachResult_active__hHJ3F')
+        const content = document.querySelector('.seachResult_content__XM8ab');
+        content.classList.remove('seachResult_active-content__qUVIw');
+        const cards = content.querySelectorAll('.seachResult_card-items__JEtOF');
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].classList.remove('seachResult_active-cards__YqVcW');
+            const card = cards[i].querySelector('.seachResult_card-item__LVNjM')
+            card.classList.remove('seachResult_active-card__tEn3o')  
+        }
+    };
+
     return (
         <>
             <div className={cx('view')}>
                 <p>Xem: </p>
-                <RoomyIcon className={cx('icon-roomy')}/>
-                <ListIcon className={cx('icon-list')}/>
+                <RoomyIcon className={cx('icon-roomy')} onClick={e => handleClickRoomy(e)}/>
+                <ListIcon className={cx('icon-list', 'active')} onClick={e => handleClickListIcon(e)} />
             </div>
             <div className={cx('content')}>
                 {api.map((item) => {

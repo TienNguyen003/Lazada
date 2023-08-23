@@ -95,7 +95,7 @@ export const PlusIcon = ({ width = '1rem', height = '1.7rem', className }) => (
     </svg>
 );
 
-export const RoomyIcon = ({ width = '2rem', height = '2rem', className }) => (
+export const RoomyIcon = ({ width = '2rem', height = '2rem', className , onClick}) => (
     <svg
         className={className}
         width={width}
@@ -103,6 +103,7 @@ export const RoomyIcon = ({ width = '2rem', height = '2rem', className }) => (
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
+        onClick={onClick}
     >
         <path
             fill="currentColor"
@@ -111,7 +112,7 @@ export const RoomyIcon = ({ width = '2rem', height = '2rem', className }) => (
     </svg>
 );
 
-export const ListIcon = ({ width = '2rem', height = '2rem', className }) => (
+export const ListIcon = ({ width = '2rem', height = '2rem', className , onClick}) => (
     <svg
         className={className}
         width={width}
@@ -119,6 +120,7 @@ export const ListIcon = ({ width = '2rem', height = '2rem', className }) => (
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
+        onClick={onClick}
     >
         <path
             fill="currentColor"
