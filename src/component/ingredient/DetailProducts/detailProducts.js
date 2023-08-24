@@ -61,7 +61,7 @@ function DetailProducts() {
     }
 
     return (
-        <>
+        <div className={cx('content')}>
             <div className={cx('detail-products')}>
                 <div className={cx('img-product')}>
                     <img className={cx('img')} src={'https://down-vn.img.susercontent.com/file/' + data.image} alt="" />
@@ -319,7 +319,7 @@ function DetailProducts() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
