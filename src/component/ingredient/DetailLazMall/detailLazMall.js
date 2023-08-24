@@ -197,11 +197,11 @@ function DetailLazMall() {
                 <div className={cx('card')}>
                     <div className={cx('card-items')}>
                         {arr.length > 0
-                            ? arr.map((item) => {
+                            ? arr.map((item, id) => {
                                   return (
                                       <Link
                                           to={`/ProductsResults/@${item.itemid}`}
-                                          key={item.id}
+                                          key={id}
                                           className={cx('product-item')}
                                       >
                                           <div className={cx('card-item')}>

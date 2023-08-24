@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import api from '../../../api/api';
 import styles from './lazflash.module.scss';
@@ -114,33 +115,33 @@ function Lazflash() {
                 {api.slice(300, 318).map((item) => {
                     return (
                         <div className={cx('flash-unit')} key={item.itemid}>
-                            <div className={cx('flash-unit-image')}>
-                                <img
-                                    className={cx('image')}
-                                    src={'https://down-vn.img.susercontent.com/file/' + item.image}
-                                    alt={item.name}
-                                />
-                            </div>
-                            <div className={cx('unit-content')}>
-                                <div className={cx('sale-title')}>{item.name}</div>
-                                <div className={cx('sale-price')}>
-                                    {parseInt(item.price_min.toString().slice(0, -5)).toLocaleString(
-                                        'vi-VN',
-                                    )}
+                            <Link to={`/ProductsResults/@${item.itemid}`}>
+                                <div className={cx('flash-unit-image')}>
+                                    <img
+                                        className={cx('image')}
+                                        src={'https://down-vn.img.susercontent.com/file/' + item.image}
+                                        alt={item.name}
+                                    />
                                 </div>
-                                <div className={cx('origin-price')}>
-                                    <span className={cx('origin-price-value')}>
-                                        {Math.round(
-                                            parseInt(item.price_min.toString().slice(0, -5)) /
-                                                (1 - item.raw_discount / 100),
-                                        ).toLocaleString('vi-VN')}
-                                    </span>
-                                    <span className={cx('discount')}>-{item.show_discount}%</span>
+                                <div className={cx('unit-content')}>
+                                    <div className={cx('sale-title')}>{item.name}</div>
+                                    <div className={cx('sale-price')}>
+                                        {parseInt(item.price_min.toString().slice(0, -5)).toLocaleString('vi-VN')}
+                                    </div>
+                                    <div className={cx('origin-price')}>
+                                        <span className={cx('origin-price-value')}>
+                                            {Math.round(
+                                                parseInt(item.price_min.toString().slice(0, -5)) /
+                                                    (1 - item.raw_discount / 100),
+                                            ).toLocaleString('vi-VN')}
+                                        </span>
+                                        <span className={cx('discount')}>-{item.show_discount}%</span>
+                                    </div>
+                                    <div className={cx('action-wrap')}>
+                                        <div className={cx('item-button')}>Mua ngay</div>
+                                    </div>
                                 </div>
-                                <div className={cx('action-wrap')}>
-                                    <div className={cx('item-button')}>Mua ngay</div>
-                                </div>
-                            </div>
+                            </Link>
                         </div>
                     );
                 })}
@@ -160,9 +161,7 @@ function Lazflash() {
                                     <div className={cx('flash-unit-image')}>
                                         <img
                                             className={cx('image')}
-                                            src={
-                                                'https://down-vn.img.susercontent.com/file/' + item.image
-                                            }
+                                            src={'https://down-vn.img.susercontent.com/file/' + item.image}
                                             alt={item.name}
                                         />
                                     </div>
@@ -171,24 +170,20 @@ function Lazflash() {
                                         <div className={cx('sale-price')}>
                                             {timeHour < 20
                                                 ? '????'
-                                                : parseInt(
-                                                      item.price_min.toString().slice(0, -5),
-                                                  ).toLocaleString('vi-VN')}
+                                                : parseInt(item.price_min.toString().slice(0, -5)).toLocaleString(
+                                                      'vi-VN',
+                                                  )}
                                         </div>
                                         <div className={cx('origin-price')}>
                                             <span className={cx('origin-price-value')}>
                                                 {timeHour < 20
                                                     ? '????'
                                                     : Math.round(
-                                                          parseInt(
-                                                              item.price_min.toString().slice(0, -5),
-                                                          ) /
+                                                          parseInt(item.price_min.toString().slice(0, -5)) /
                                                               (1 - item.raw_discount / 100),
                                                       ).toLocaleString('vi-VN')}
                                             </span>
-                                            <span className={cx('discount')}>
-                                                -{item.show_discount}%
-                                            </span>
+                                            <span className={cx('discount')}>-{item.show_discount}%</span>
                                         </div>
                                         <div className={cx('action-wrap')}>
                                             <div className={cx('item-button')}>Mua ngay</div>
@@ -220,9 +215,7 @@ function Lazflash() {
                                 <div className={cx('sale-price')}>
                                     {timeHour < 24
                                         ? '????'
-                                        : parseInt(
-                                              item.price_min.toString().slice(0, -5),
-                                          ).toLocaleString('vi-VN')}
+                                        : parseInt(item.price_min.toString().slice(0, -5)).toLocaleString('vi-VN')}
                                 </div>
                                 <div className={cx('origin-price')}>
                                     <span className={cx('origin-price-value')}>
@@ -263,9 +256,7 @@ function Lazflash() {
                                 <div className={cx('sale-price')}>
                                     {timeHour < 24
                                         ? '????'
-                                        : parseInt(
-                                              item.price_min.toString().slice(0, -5),
-                                          ).toLocaleString('vi-VN')}
+                                        : parseInt(item.price_min.toString().slice(0, -5)).toLocaleString('vi-VN')}
                                 </div>
                                 <div className={cx('origin-price')}>
                                     <span className={cx('origin-price-value')}>
@@ -301,9 +292,7 @@ function Lazflash() {
                                     <div className={cx('flash-unit-image')}>
                                         <img
                                             className={cx('image')}
-                                            src={
-                                                'https://down-vn.img.susercontent.com/file/' + item.image
-                                            }
+                                            src={'https://down-vn.img.susercontent.com/file/' + item.image}
                                             alt={item.name}
                                         />
                                     </div>
@@ -312,24 +301,20 @@ function Lazflash() {
                                         <div className={cx('sale-price')}>
                                             {timeHour < 20
                                                 ? '????'
-                                                : parseInt(
-                                                      item.price_min.toString().slice(0, -5),
-                                                  ).toLocaleString('vi-VN')}
+                                                : parseInt(item.price_min.toString().slice(0, -5)).toLocaleString(
+                                                      'vi-VN',
+                                                  )}
                                         </div>
                                         <div className={cx('origin-price')}>
                                             <span className={cx('origin-price-value')}>
                                                 {timeHour < 20
                                                     ? '????'
                                                     : Math.round(
-                                                          parseInt(
-                                                              item.price_min.toString().slice(0, -5),
-                                                          ) /
+                                                          parseInt(item.price_min.toString().slice(0, -5)) /
                                                               (1 - item.raw_discount / 100),
                                                       ).toLocaleString('vi-VN')}
                                             </span>
-                                            <span className={cx('discount')}>
-                                                -{item.show_discount}%
-                                            </span>
+                                            <span className={cx('discount')}>-{item.show_discount}%</span>
                                         </div>
                                         <div className={cx('action-wrap')}>
                                             <div className={cx('item-button')}>Mua ngay</div>
