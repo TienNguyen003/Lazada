@@ -45,6 +45,11 @@ function SearchResult() {
             const card = cards[i].querySelector('.seachResult_card-item__LVNjM');
             card.classList.remove('seachResult_active-card__tEn3o');
         }
+
+        const arrImg = document.querySelectorAll('.seachResult_arr-img__PjP-e');
+        for (let j = 0; j < arrImg.length; j++) {
+            arrImg[j].style.display = 'none';
+        }
     };
 
     console.clear();
