@@ -21,6 +21,7 @@
 }
 .imageBg{
     width: 189px;
+    height: 100%;
 }
 .segment--icon{
     display: block;
@@ -117,4 +118,17 @@
 .active-card{
     display: flex;
     padding: 10px;
+}
+.arr-img{
+    display: none;
+    padding-top: 15px;
+}
+.img-item{
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+
+    &:hover{
+        border: 1px solid #f57224;
+    }
 }

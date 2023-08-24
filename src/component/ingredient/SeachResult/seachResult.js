@@ -15,39 +15,46 @@ function SearchResult() {
     const url = decodeURIComponent(useLocation().pathname.replace('/SearchResults/@', ''));
 
     const handleClickListIcon = (e) => {
-        const roomy = document.querySelector('.seachResult_icon-roomy__DPPDc')
-        roomy.classList.add('seachResult_active__hHJ3F')
-        e.target.classList.remove('seachResult_active__hHJ3F')
+        const roomy = document.querySelector('.seachResult_icon-roomy__DPPDc');
+        roomy.classList.add('seachResult_active__hHJ3F');
+        e.target.classList.remove('seachResult_active__hHJ3F');
         const content = document.querySelector('.seachResult_content__XM8ab');
         content.classList.add('seachResult_active-content__qUVIw');
         const cards = content.querySelectorAll('.seachResult_card-items__JEtOF');
         for (let i = 0; i < cards.length; i++) {
             cards[i].classList.add('seachResult_active-cards__YqVcW');
-            const card = cards[i].querySelector('.seachResult_card-item__LVNjM')
-            card.classList.add('seachResult_active-card__tEn3o')  
+            const card = cards[i].querySelector('.seachResult_card-item__LVNjM');
+            card.classList.add('seachResult_active-card__tEn3o');
+        }
+
+        const arrImg = document.querySelectorAll('.seachResult_arr-img__PjP-e');
+        for (let j = 0; j < arrImg.length; j++) {
+            arrImg[j].style.display = 'block';
         }
     };
 
     const handleClickRoomy = (e) => {
-        const roomy = document.querySelector('.seachResult_icon-list__IprHl')
-        roomy.classList.add('seachResult_active__hHJ3F')
-        e.target.classList.remove('seachResult_active__hHJ3F')
+        const roomy = document.querySelector('.seachResult_icon-list__IprHl');
+        roomy.classList.add('seachResult_active__hHJ3F');
+        e.target.classList.remove('seachResult_active__hHJ3F');
         const content = document.querySelector('.seachResult_content__XM8ab');
         content.classList.remove('seachResult_active-content__qUVIw');
         const cards = content.querySelectorAll('.seachResult_card-items__JEtOF');
         for (let i = 0; i < cards.length; i++) {
             cards[i].classList.remove('seachResult_active-cards__YqVcW');
-            const card = cards[i].querySelector('.seachResult_card-item__LVNjM')
-            card.classList.remove('seachResult_active-card__tEn3o')  
+            const card = cards[i].querySelector('.seachResult_card-item__LVNjM');
+            card.classList.remove('seachResult_active-card__tEn3o');
         }
     };
+
+    console.clear();
 
     return (
         <>
             <div className={cx('view')}>
                 <p>Xem: </p>
-                <RoomyIcon className={cx('icon-roomy')} onClick={e => handleClickRoomy(e)}/>
-                <ListIcon className={cx('icon-list', 'active')} onClick={e => handleClickListIcon(e)} />
+                <RoomyIcon className={cx('icon-roomy')} onClick={(e) => handleClickRoomy(e)} />
+                <ListIcon className={cx('icon-list', 'active')} onClick={(e) => handleClickListIcon(e)} />
             </div>
             <div className={cx('content')}>
                 {api.map((item) => {
@@ -105,6 +112,19 @@ function SearchResult() {
 
                                         <div className={cx('card-footer')}>
                                             <div className={cx('card-ratings')}>Đã bán {item.global_sold_count}</div>
+                                        </div>
+
+                                        <div className={cx('arr-img')}>
+                                            {item.images.map((item, id) => {
+                                                return (
+                                                    <img
+                                                        key={id}
+                                                        className={cx('img-item')}
+                                                        src={'https://down-vn.img.susercontent.com/file/' + item}
+                                                        alt={item.name}
+                                                    />
+                                                );
+                                            })}
                                         </div>
                                     </div>
                                 </div>
