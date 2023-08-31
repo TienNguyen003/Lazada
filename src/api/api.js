@@ -705,7 +705,6 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 213990710,
         can_use_bundle_deal: true,
         bundle_deal_info: {
@@ -716,7 +715,6 @@ const api = [
         has_group_buy_stock: null,
         group_buy_info: null,
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hà Nội',
@@ -727,18 +725,15 @@ const api = [
             label: '50% Giảm',
         },
         is_on_flash_sale: false,
-
         shop_name: 'THUỲ DUYÊN Watch',
         shop_rating: 4.728659,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 2827,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.046051},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::12759105490',
@@ -1503,10 +1498,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -1525,11 +1518,9 @@ const api = [
             label: 'Giảm ₫5k',
         },
         is_on_flash_sale: false,
-
         shop_name: 'BAK Official Store',
         shop_rating: 4.769478,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 171,
@@ -2249,8 +2240,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 7,
         raw_discount: 7,
-        discount: '7%',
-        
+        discount: '7%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -2288,12 +2278,9 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
@@ -2304,18 +2291,15 @@ const api = [
             label: '5% Giảm',
         },
         is_on_flash_sale: false,
-
         shop_name: 'FREYA SHOP - Douyin Hot',
         shop_rating: 4.755102,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 168,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.039408},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::18071987135',
@@ -2324,14 +2308,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -2787,8 +2768,7 @@ const api = [
         has_lowest_price_guarantee: true,
         show_discount: 44,
         raw_discount: 44,
-        discount: '44%',
-        
+        discount: '44%',        
         size_chart: '',
         video_info_list: [
             {
@@ -3456,8 +3436,7 @@ const api = [
         has_lowest_price_guarantee: true,
         show_discount: 22,
         raw_discount: 22,
-        discount: '22%',
-        
+        discount: '22%',        
         size_chart: '6aff0ee1a0f54923822b651f07329bcf',
         video_info_list: [],
         tier_variations: [
@@ -3594,8 +3573,7 @@ const api = [
         has_lowest_price_guarantee: true,
         show_discount: 44,
         raw_discount: 44,
-        discount: '44%',
-        
+        discount: '44%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -3905,8 +3883,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 24,
         raw_discount: 24,
-        discount: '24%',
-        
+        discount: '24%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -4050,8 +4027,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 50,
         raw_discount: 50,
-        discount: '50%',
-        
+        discount: '50%',        
         size_chart: 'df34757ae8a8ea0ecb54eeac8c6a3b99',
         video_info_list: [
             {
@@ -4470,8 +4446,7 @@ const api = [
         has_lowest_price_guarantee: true,
         show_discount: 24,
         raw_discount: 24,
-        discount: '24%',
-        
+        discount: '24%',        
         size_chart: '',
         video_info_list: [
             {
@@ -5093,8 +5068,7 @@ const api = [
         has_lowest_price_guarantee: true,
         show_discount: 18,
         raw_discount: 18,
-        discount: '18%',
-        
+        discount: '18%',        
         size_chart: '',
         video_info_list: [
             {
@@ -5287,8 +5261,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 26,
         raw_discount: 26,
-        discount: '26%',
-        
+        discount: '26%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -5725,8 +5698,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 41,
         raw_discount: 41,
-        discount: '41%',
-        
+        discount: '41%',        
         size_chart: '',
         video_info_list: [
             {
@@ -5792,10 +5764,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -5814,18 +5784,15 @@ const api = [
             label: '10% Giảm',
         },
         is_on_flash_sale: false,
-
         shop_name: 'Tổng Kho Yến Trần',
         shop_rating: 4.732676,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 4293,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.026052},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::8851827326',
@@ -8044,10 +8011,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -8062,18 +8027,15 @@ const api = [
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: true,
-
         shop_name: 'Phukien911',
         shop_rating: 4.903521,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 132,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 40,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.028629},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::19866528288',
@@ -8563,10 +8525,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -8581,18 +8541,15 @@ const api = [
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'daisies.studio',
         shop_rating: 4.90938,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 1150,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.024976},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::8318634501',
@@ -8720,10 +8677,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -8742,11 +8697,9 @@ const api = [
             label: 'Giảm ₫25,555k',
         },
         is_on_flash_sale: false,
-
         shop_name: 'Linh Kiện Máy Game',
         shop_rating: 4.986199,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 277,
@@ -9175,10 +9128,8 @@ const api = [
         is_cc_installment_payment_eligible: true,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -9197,11 +9148,9 @@ const api = [
             label: '5% Giảm',
         },
         is_on_flash_sale: false,
-
         shop_name: 'Sơn Pixel',
         shop_rating: 4.76603,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 217,
@@ -11230,10 +11179,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -11248,18 +11195,15 @@ const api = [
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'zhixing_trading.vn',
         shop_rating: 4.53012,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 24,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.027822},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::21725010150',
@@ -11268,14 +11212,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -11384,30 +11325,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Thái Nguyên',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Thái Nguyên chính hãng',
         shop_rating: 4.913793,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 21,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.022268},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::23929579125',
@@ -11416,14 +11351,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -11470,8 +11402,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 0,
         raw_discount: 0,
-        discount: null,
-        
+        discount: null,        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -11513,30 +11444,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Bình Định',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Anna closet',
         shop_rating: 4.904632,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 223,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.028900},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::22815586213',
@@ -11545,14 +11470,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -11601,8 +11523,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 0,
         raw_discount: 0,
-        discount: null,
-        
+        discount: null,        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -11649,30 +11570,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hà Nội',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Góc của Cá 1688',
         shop_rating: 4.692098,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 20502,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.022262},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::4391099178',
@@ -11681,14 +11596,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -11783,7 +11695,6 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 209181070,
         can_use_bundle_deal: true,
         bundle_deal_info: {
@@ -11794,25 +11705,21 @@ const api = [
         has_group_buy_stock: null,
         group_buy_info: null,
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Domi Domi Shop',
         shop_rating: 4.798387,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 197,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.027775},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::6756820450',
@@ -11821,14 +11728,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: false,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -11881,8 +11785,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 29,
         raw_discount: 29,
-        discount: '29%',
-        
+        discount: '29%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -11925,30 +11828,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'thochauplaza2022',
         shop_rating: 4.587108,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 2122,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.022149},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::19205797903',
@@ -11957,14 +11854,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -12022,8 +11916,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 30,
         raw_discount: 30,
-        discount: '30%',
-        
+        discount: '30%',        
         size_chart: '',
         video_info_list: [
             {
@@ -12089,10 +11982,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -12107,18 +11998,15 @@ const api = [
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Thun Unisex',
         shop_rating: 4.471348,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 447,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.028457},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::20442994149',
@@ -12127,14 +12015,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -12239,30 +12124,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hưng Yên',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Linh Kiện - Tấn Phát',
         shop_rating: 4.70687,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 26,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.021998},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::12513562289',
@@ -12271,14 +12150,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: false,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -12420,12 +12296,9 @@ const api = [
         is_cc_installment_payment_eligible: true,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
@@ -12436,18 +12309,15 @@ const api = [
             label: 'Giảm ₫25k',
         },
         is_on_flash_sale: false,
-
         shop_name: 'BOXX ',
         shop_rating: 4.927487,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 36,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.027469},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::15862140630',
@@ -12556,12 +12426,9 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hà Nội',
@@ -12572,18 +12439,15 @@ const api = [
             label: 'Giảm ₫10k',
         },
         is_on_flash_sale: false,
-
         shop_name: 'F1mobile',
         shop_rating: 4.796323,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 33,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.021891},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::18050754112',
@@ -12750,10 +12614,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {
@@ -12768,18 +12630,15 @@ const api = [
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Banamo_Fashion',
         shop_rating: 4.867349,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 904,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.028388},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::18655769643',
@@ -12931,30 +12790,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hà Nội',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: '\bHương Quỳnh Bigsize',
         shop_rating: 4.861727,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 213,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.021882},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::21626983399',
@@ -12963,9 +12816,7 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
@@ -16562,7 +16413,6 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 206702426,
         can_use_bundle_deal: true,
         bundle_deal_info: {
@@ -16573,25 +16423,21 @@ const api = [
         has_group_buy_stock: null,
         group_buy_info: null,
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Nam Định',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Shop Hải Yến NĐ',
         shop_rating: 4.727444,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 692,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.027275},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::17385789935',
@@ -16600,14 +16446,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -16723,12 +16566,9 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
@@ -16739,18 +16579,15 @@ const api = [
             label: 'Giảm ₫60k',
         },
         is_on_flash_sale: false,
-
         shop_name: 'TMOBILE - GIÁ TỐT NHẤT',
         shop_rating: 4.902954,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 108,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.019309},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::21973497112',
@@ -16759,14 +16596,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -16904,12 +16738,9 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 206596584,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Bình Dương',
@@ -16920,18 +16751,15 @@ const api = [
             label: '6% Giảm',
         },
         is_on_flash_sale: true,
-
         shop_name: 'peedimall',
         shop_rating: 4.503701,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 167,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 10,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.026615},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::19454709156',
@@ -16940,14 +16768,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -17028,30 +16853,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hà Nội',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'dong_phuong_lam_tuyet',
         shop_rating: 4.909022,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 3300,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.019216},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::7940644808',
@@ -17060,14 +16879,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -17116,8 +16932,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 46,
         raw_discount: 46,
-        discount: '46%',
-        
+        discount: '46%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -17159,7 +16974,6 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 213428346,
         can_use_bundle_deal: true,
         bundle_deal_info: {
@@ -17170,25 +16984,21 @@ const api = [
         has_group_buy_stock: null,
         group_buy_info: null,
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hà Nội',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Quynhanhhouse',
         shop_rating: 4.825068,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 244,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.027170},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::18261603573',
@@ -17197,14 +17007,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -17312,30 +17119,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'AZGameShop',
         shop_rating: 4.861087,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 387,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.019162},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::1675733361',
@@ -17344,14 +17145,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -17436,30 +17234,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Nước ngoài',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'lotus1.vn',
         shop_rating: 4.589314,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 10,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.026603},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::16077604202',
@@ -17468,14 +17260,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: false,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -17553,30 +17342,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Nghệ An',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'thietbisogiare',
         shop_rating: 4.648249,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 296,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.018752},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::5882501332',
@@ -17585,14 +17368,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -17646,8 +17426,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 39,
         raw_discount: 39,
-        discount: '39%',
-        
+        discount: '39%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -17705,30 +17484,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: "HAN'S-STORE",
         shop_rating: 4.834111,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 858,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.026733},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::20457560771',
@@ -17737,14 +17510,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -17799,8 +17569,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 35,
         raw_discount: 35,
-        discount: '35%',
-        
+        discount: '35%',        
         size_chart: 'sg-11134201-22110-84433v20bnjv74',
         video_info_list: [],
         tier_variations: [
@@ -17838,7 +17607,6 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 213448030,
         can_use_bundle_deal: true,
         bundle_deal_info: {
@@ -17849,7 +17617,6 @@ const api = [
         has_group_buy_stock: null,
         group_buy_info: null,
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Nước ngoài',
@@ -17860,7 +17627,6 @@ const api = [
             label: 'Giảm ₫26,5k',
         },
         is_on_flash_sale: false,
-
         shop_name: 'Weird Puss Official Store',
         shop_rating: 4.877347,
         is_mart: false,
@@ -18175,7 +17941,6 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 205934186,
         can_use_bundle_deal: true,
         bundle_deal_info: {
@@ -18186,25 +17951,21 @@ const api = [
         has_group_buy_stock: null,
         group_buy_info: null,
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Nước ngoài',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'youyoumetop.vn',
         shop_rating: 4.850188,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 489,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.018434},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::8385794560',
@@ -18741,10 +18502,8 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: true,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
         welcome_package_info: null,
         add_on_deal_info: {

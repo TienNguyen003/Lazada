@@ -3,6 +3,7 @@
 import classNames from 'classnames/bind';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Tippy from '@tippyjs/react/headless';
 
 import api from '../../../api/api';
 import ButtonCustom from '../../layout/Button/button';
@@ -165,6 +166,33 @@ function DetailProducts() {
                         </div>
                     )}
 
+                    {data.voucher_info != null && (
+                        <div className={cx('discount-shop')}>
+                            <p className={cx('txt-trans')}>Mã Giảm Giá Của Shop</p>
+                            <div className={cx('dc-shopit')}>
+                                <div className={cx('mini-voucher')}>{data.voucher_info.label}</div>
+                            </div>
+                        </div>
+                    )}
+
+                    {data.add_on_deal_info != null && (
+                        <div className={cx('discount-shop')}>
+                            <p className={cx('txt-trans')}>Deal Sốc</p>
+                            <div className={cx('dc-shopit')}>
+                                <div className={cx('mini-voucher')}>{data.bundle_deal_info.bundle_deal_label}</div>
+                            </div>
+                        </div>
+                    )}
+
+                    {data.bundle_deal_info != null && (
+                        <div className={cx('discount-shop')}>
+                            <p className={cx('txt-trans')}>Combo Khuyến Mãi</p>
+                            <div className={cx('dc-shopit')}>
+                                <div className={cx('mini-voucher')}>{data.add_on_deal_info.add_on_deal_label}</div>
+                            </div>
+                        </div>
+                    )}
+
                     <div className={cx('transport')}>
                         <div className={cx('transport-to')}>
                             <p className={cx('txt-trans')}>Vận chuyển</p>
@@ -177,12 +205,12 @@ function DetailProducts() {
                                 <div className={cx('address-to')}>
                                     <div className={cx('txt-transto')}>Vận chuyển tới</div>
                                     <p className={cx('address')}>Phường Cầu Diễn, Quận Nam Từ Liêm</p>
-                                    <DownIcon className={cx('icon-down')}/>
+                                    <DownIcon className={cx('icon-down')} />
                                 </div>
                                 <div className={cx('address-to')}>
                                     <div className={cx('txt-transto')}>Phí vận chuyển</div>
                                     <div className={cx('price-trans')}>₫20.925 - ₫28.700</div>
-                                    <DownIcon className={cx('icon-down')}/>
+                                    <DownIcon className={cx('icon-down')} />
                                 </div>
                             </div>
                         </div>
@@ -250,7 +278,17 @@ function DetailProducts() {
                                     src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/6c502a2641457578b0d5f5153b53dd5d.png"
                                     alt=""
                                 />
-                                <p>7 ngày miễn phí trả hàng</p>
+                                <Tippy
+                                    // interactive
+                                    placement="bottom"
+                                    render={(atts) => (
+                                        <div className={cx('text-tl')} tabIndex="-1" {...atts}>
+                                            Cam kết đổi trả hàng miễn phí trong vòng 7 ngày kể từ ngày nhận hàng.
+                                        </div>
+                                    )}
+                                >
+                                    <p>7 ngày miễn phí trả hàng</p>
+                                </Tippy>
                             </div>
                             <div className={cx('days7')}>
                                 <img
@@ -258,7 +296,17 @@ function DetailProducts() {
                                     src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/511aca04cc3ba9234ab0e4fcf20768a2.png"
                                     alt=""
                                 />
-                                <p>Hàng chính hãng 100%</p>
+                                <Tippy
+                                    // interactive
+                                    placement="bottom"
+                                    render={(atts) => (
+                                        <div className={cx('text-tl')} tabIndex="-1" {...atts}>
+                                            Cam kết hàng chính hãng 100%.
+                                        </div>
+                                    )}
+                                >
+                                    <p>Hàng chính hãng 100%</p>
+                                </Tippy>
                             </div>
                             <div className={cx('days7')}>
                                 <img
@@ -266,7 +314,17 @@ function DetailProducts() {
                                     src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/16ead7e0a68c3cff9f32910e4be08122.png"
                                     alt=""
                                 />
-                                <p>Miễn phí vận chuyển</p>
+                                <Tippy
+                                    // interactive
+                                    placement="bottom"
+                                    render={(atts) => (
+                                        <div className={cx('text-tl')} tabIndex="-1" {...atts}>
+                                            Đơn hàng được vận chuyển miễn phí.
+                                        </div>
+                                    )}
+                                >
+                                    <p>Miễn phí vận chuyển</p>
+                                </Tippy>
                             </div>
                         </div>
                     )}
