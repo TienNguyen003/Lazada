@@ -179,7 +179,7 @@ function DetailProducts() {
                         <div className={cx('discount-shop')}>
                             <p className={cx('txt-trans')}>Deal Sốc</p>
                             <div className={cx('dc-shopit')}>
-                                <div className={cx('mini-voucher')}>{data.bundle_deal_info.bundle_deal_label}</div>
+                                <div className={cx('mini-voucher')}>{data.add_on_deal_info.add_on_deal_label}</div>
                             </div>
                         </div>
                     )}
@@ -188,7 +188,7 @@ function DetailProducts() {
                         <div className={cx('discount-shop')}>
                             <p className={cx('txt-trans')}>Combo Khuyến Mãi</p>
                             <div className={cx('dc-shopit')}>
-                                <div className={cx('mini-voucher')}>{data.add_on_deal_info.add_on_deal_label}</div>
+                                <div className={cx('mini-voucher')}>{data.bundle_deal_info.bundle_deal_label}</div>
                             </div>
                         </div>
                     )}
