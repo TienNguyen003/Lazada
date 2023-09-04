@@ -18,6 +18,10 @@ function DetailProducts() {
     const apiCateP = apiProduct;
     const [data, setData] = useState([]);
 
+    const date = new Date();
+    const getDay = date.getDate();
+    const getMonth = date.getMonth();
+
     const url = decodeURIComponent(useLocation().pathname.replace('/ProductsResults/@', ''));
     useEffect(() => {
         apiP.map((item) => {
@@ -209,7 +213,36 @@ function DetailProducts() {
                                 </div>
                                 <div className={cx('address-to')}>
                                     <div className={cx('txt-transto')}>Phí vận chuyển</div>
-                                    <div className={cx('price-trans')}>₫20.925 - ₫28.700</div>
+                                    <Tippy
+                                        placement="bottom"
+                                        render={(atts) => (
+                                            <div className={cx('giaohang')} tabIndex="-1" {...atts}>
+                                                <div className={cx('speed-trans')}>
+                                                    <p>
+                                                        Nhanh <br />{' '}
+                                                        <p className={cx('time-trans')}>
+                                                            Giao hàng trước {getDay + 7} tháng {getMonth + 1} -{' '}
+                                                            {getDay + 9} tháng {getMonth + 1}
+                                                        </p>
+                                                    </p>
+                                                    <p>₫28.700</p>
+                                                </div>
+                                                <div className={cx('speed-trans')}>
+                                                    <p>
+                                                        Tiết kiệm
+                                                        <br />{' '}
+                                                        <p className={cx('time-trans')}>
+                                                            Giao hàng trước {getDay + 10} tháng {getMonth + 1} -{' '}
+                                                            {getDay + 12} tháng {getMonth + 1}
+                                                        </p>
+                                                    </p>
+                                                    <p>₫20.925</p>
+                                                </div>
+                                            </div>
+                                        )}
+                                    >
+                                        <div className={cx('price-trans')}>₫20.925 - ₫28.700</div>
+                                    </Tippy>
                                     <DownIcon className={cx('icon-down')} />
                                 </div>
                             </div>

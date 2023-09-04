@@ -193,6 +193,7 @@
     justify-content: center;
     margin-left: 5px;
     padding: 3px 7px;
+    font-size: 1.4rem;
     background: rgba(208,1,27,.08);
     color: #ee4d2d;
     cursor: default;
@@ -238,6 +239,9 @@
     color: #757575;
     text-transform: capitalize;
     flex-shrink: 0;
+}
+.price-trans{
+    cursor: pointer;
 }
 .icon-down {
     margin-left: 5px;
@@ -452,4 +456,20 @@
     background-color: #fff;
     border: 1px solid #c4c3c373 !important;
     border-radius: 5px !important;
+}
+.giaohang{
+    opacity: 5;
+    width: 500px;
+    background-color: #fff;
+    border: 1px solid #c4c3c35a !important;
+}
+.speed-trans{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.time-trans{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #929292;
 }
