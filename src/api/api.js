@@ -6678,30 +6678,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'TP. Hồ Chí Minh',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Baongocstore2016',
         shop_rating: 4.293366,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 444,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.026140},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::20909805637',
@@ -6710,14 +6704,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -6802,7 +6793,6 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 213526932,
         can_use_bundle_deal: true,
         bundle_deal_info: {
@@ -6813,25 +6803,21 @@ const api = [
         has_group_buy_stock: null,
         group_buy_info: null,
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Nước ngoài',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'sunflower2.vn',
         shop_rating: 4.589928,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 69,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.030119},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::22414774290',
@@ -6840,14 +6826,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -6980,12 +6963,9 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Hà Nội',
@@ -6996,18 +6976,15 @@ const api = [
             label: '12% Giảm',
         },
         is_on_flash_sale: false,
-
         shop_name: 'Phụ Kiện Cường Thịnh ( sỉ )',
         shop_rating: 4.788686,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 2,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.025752},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::21956999630',
@@ -7016,14 +6993,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -7063,8 +7037,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 0,
         raw_discount: 0,
-        discount: null,
-        
+        discount: null,        
         size_chart: '',
         video_info_list: [],
         tier_variations: [
@@ -7110,30 +7083,24 @@ const api = [
         is_cc_installment_payment_eligible: false,
         is_non_cc_installment_payment_eligible: false,
         show_free_shipping: false,
-
         bundle_deal_id: 0,
         can_use_bundle_deal: false,
-
         welcome_package_type: 0,
-
         can_use_wholesale: false,
         is_preferred_plus_seller: false,
         shop_location: 'Sóc Trăng',
         has_model_with_available_shopee_stock: false,
         voucher_info: null,
         is_on_flash_sale: false,
-
         shop_name: 'Phô Mai Dâu',
         shop_rating: 4.915361,
         is_mart: false,
-
         is_service_by_shopee: false,
         free_shipping_info: null,
         global_sold_count: 87,
         repurchase_rate: 0,
         best_selling_tag: 0,
         flash_sale_stock: 0,
-
         info: 'AB:59746,REQID:1f8a1b8402dbc25ea17ce25d7ec2f000,BND:category_landing_page,QUES:EMERGENCY_RECALL,RNK:gpu_dd_feav4_longterm_cn_e1_1s_din_rv2@VN_180372:{SCORE:0.032758},SECKEY:category_landing_page_sec',
         data_type: 'item',
         key: 'item::22716963027',
@@ -7142,14 +7109,11 @@ const api = [
         campaignid: 0,
         deduction_info: '',
         video_display_control: 0,
-
         relationship_label: '',
-
         can_use_cod: true,
         pub_id: '',
         pub_context_id: '1f8a1b8402dbc25ea17ce25d7ec2f000',
         friend_relationship_label: '',
-
         show_flash_sale_label: false,
         search_id: '',
         ext_info: '',
@@ -7203,8 +7167,7 @@ const api = [
         has_lowest_price_guarantee: false,
         show_discount: 49,
         raw_discount: 49,
-        discount: '49%',
-        
+        discount: '49%',        
         size_chart: '',
         video_info_list: [],
         tier_variations: [

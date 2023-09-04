@@ -65,6 +65,33 @@ function DetailProducts() {
         items.push(<StarIcon key={i} className={cx('icon')} />);
     }
 
+    const handleClickBtn = (e) => {
+        const imgCenter = document.querySelector('.detailProducts_img__sqmdA');
+
+        if (e.target.className == 'Button_title__vdxIi') {
+            const parent = e.target.parentElement;
+            const parentID = parent.dataset.id;
+            const parentName = parent.dataset.name;
+            data.tier_variations.map((item, id) => {
+                if (item.name == parentName) {
+                    if (item.images !== null) {
+                        imgCenter.src = 'https://down-vn.img.susercontent.com/file/' + item.images[parentID];
+                    }
+                }
+            });
+        } else {
+            const parentID = e.target.dataset.id;
+            const parentName = e.target.dataset.name;
+            data.tier_variations.map((item, id) => {
+                if (item.name == parentName) {
+                    if (item.images !== null) {
+                        imgCenter.src = 'https://down-vn.img.susercontent.com/file/' + item.images[parentID];
+                    }
+                }
+            });
+        }
+    };
+
     return (
         <div className={cx('content')}>
             <div className={cx('detail-products')}>
@@ -252,13 +279,15 @@ function DetailProducts() {
                             {data.tier_variations !== undefined &&
                                 data.tier_variations.map((item, id) => {
                                     return (
-                                        <div className={cx('classify')} key={id}>
+                                        <div className={cx('classify')} key={id} onClick={(e) => handleClickBtn(e)}>
                                             <p className={cx('txt-trans', 'txt-classify')}>{item.name}</p>
                                             <div className={cx('btn-classify')}>
                                                 {item.options.map((option, id) => {
                                                     return (
                                                         <ButtonCustom
                                                             key={id}
+                                                            data-id={id}
+                                                            data-name={item.name}
                                                             className={cx('product-variation')}
                                                             children={option}
                                                             outline
