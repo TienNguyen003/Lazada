@@ -8,8 +8,9 @@ import Tippy from '@tippyjs/react/headless';
 import api from '../../../api/api';
 import ButtonCustom from '../../layout/Button/button';
 import { apiProduct } from '../../../api/apiProductCate';
-import { ApartIcon, CartIcon, HeartIcon, PlusIcon, StarIcon, ShopIcon, DownIcon, TickIcon } from '../../icons/icon';
+import { ApartIcon, CartIcon, HeartIcon, PlusIcon, StarIcon, ShopIcon, DownIcon } from '../../icons/icon';
 import styles from './detailProducts.module.scss';
+import './detail.css';
 
 const cx = classNames.bind(styles);
 
@@ -66,16 +67,28 @@ function DetailProducts() {
     }
 
     const handleClickBtn = (e) => {
+        // delete active
+        const btnClick = document.querySelectorAll('.detailProducts_product-variation__eU1Fw');
+        const btnTick = document.querySelectorAll('.detailProducts_product-variation__tick__yAaGU');
+        for (let i = 0; i < btnClick.length; i++) {
+            btnClick[i].className = btnClick[i].className.replace('detailProducts_active-btn__8F1bN', '');
+        }
+        for (let j = 0; j < btnTick.length; j++) {
+            btnTick[j].style.display = 'none';
+        }
+
         const imgCenter = document.querySelector('.detailProducts_img__sqmdA');
 
+        // click btn de hien hinh anh  va active
         if (e.target.className == 'Button_title__vdxIi') {
+            // click vao text
             const tick = document.querySelector('.detailProducts_product-variation__tick__yAaGU');
-            tick.html = `<div className={cx('product-variation__tick')}>
-                            <TickIcon className={cx('icon-tick')} />
-                        </div>`;
+            tick.innerHTML = `<svg class="icon-tick" viewBox="0 0 12 12" fill="currentColor"><g><path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path></g></svg>`;
+            tick.style.display = 'block';
 
             const parent = e.target.parentElement;
-            parent.classList.add('.detailProducts_active-btn__8F1bN');
+            parent.appendChild(tick);
+            parent.classList.add('detailProducts_active-btn__8F1bN');
             const parentID = parent.dataset.id;
             const parentName = parent.dataset.name;
             data.tier_variations.map((item) => {
@@ -86,6 +99,13 @@ function DetailProducts() {
                 }
             });
         } else {
+            const tick = e.target.querySelector('.detailProducts_product-variation__tick__yAaGU')
+            tick.style.display = 'block';
+            console.log(tick);
+            tick.innerHTML = `<svg class="icon-tick" viewBox="0 0 12 12" fill="currentColor"><g><path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path></g></svg>`;
+            e.target.classList.add('detailProducts_active-btn__8F1bN');
+
+            // click vao ca btn
             const parentID = e.target.dataset.id;
             const parentName = e.target.dataset.name;
             data.tier_variations.map((item) => {

@@ -1,0 +1,7 @@
+.icon-tick{
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    width: 0.9rem;
+    -webkit-text-fill-color: #fff !important;
+}

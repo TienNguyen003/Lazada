@@ -477,10 +477,11 @@
 
 // active button
 .active-btn{
+    color: #ee4d2d;
     border-color: #ee4d2d;
 }
 .product-variation__tick {
-    // display: none;
+    display: none;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -488,11 +489,5 @@
     height: 0;
     border-bottom: 1.4rem solid red;
     border-left: 1.4rem solid transparent;
-    color: #000;
-}
-.icon-tick{
-    position: absolute;
-    right: 0;
-    bottom: -14px;
     color: #fff;
 }
