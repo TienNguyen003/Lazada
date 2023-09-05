@@ -8,7 +8,7 @@ import Tippy from '@tippyjs/react/headless';
 import api from '../../../api/api';
 import ButtonCustom from '../../layout/Button/button';
 import { apiProduct } from '../../../api/apiProductCate';
-import { ApartIcon, CartIcon, HeartIcon, PlusIcon, StarIcon, ShopIcon, DownIcon } from '../../icons/icon';
+import { ApartIcon, CartIcon, HeartIcon, PlusIcon, StarIcon, ShopIcon, DownIcon, TickIcon } from '../../icons/icon';
 import styles from './detailProducts.module.scss';
 
 const cx = classNames.bind(styles);
@@ -69,10 +69,16 @@ function DetailProducts() {
         const imgCenter = document.querySelector('.detailProducts_img__sqmdA');
 
         if (e.target.className == 'Button_title__vdxIi') {
+            const tick = document.querySelector('.detailProducts_product-variation__tick__yAaGU');
+            tick.html = `<div className={cx('product-variation__tick')}>
+                            <TickIcon className={cx('icon-tick')} />
+                        </div>`;
+
             const parent = e.target.parentElement;
+            parent.classList.add('.detailProducts_active-btn__8F1bN');
             const parentID = parent.dataset.id;
             const parentName = parent.dataset.name;
-            data.tier_variations.map((item, id) => {
+            data.tier_variations.map((item) => {
                 if (item.name == parentName) {
                     if (item.images !== null) {
                         imgCenter.src = 'https://down-vn.img.susercontent.com/file/' + item.images[parentID];
@@ -82,7 +88,7 @@ function DetailProducts() {
         } else {
             const parentID = e.target.dataset.id;
             const parentName = e.target.dataset.name;
-            data.tier_variations.map((item, id) => {
+            data.tier_variations.map((item) => {
                 if (item.name == parentName) {
                     if (item.images !== null) {
                         imgCenter.src = 'https://down-vn.img.susercontent.com/file/' + item.images[parentID];
@@ -290,9 +296,11 @@ function DetailProducts() {
                                                             data-name={item.name}
                                                             className={cx('product-variation')}
                                                             children={option}
-                                                            outline
                                                             small
-                                                        />
+                                                        >
+                                                            {option}
+                                                            <div className={cx('product-variation__tick')}></div>
+                                                        </ButtonCustom>
                                                     );
                                                 })}
                                             </div>

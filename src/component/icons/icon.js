@@ -95,7 +95,7 @@ export const PlusIcon = ({ width = '1rem', height = '1.7rem', className }) => (
     </svg>
 );
 
-export const RoomyIcon = ({ width = '2rem', height = '2rem', className , onClick}) => (
+export const RoomyIcon = ({ width = '2rem', height = '2rem', className, onClick }) => (
     <svg
         className={className}
         width={width}
@@ -112,7 +112,7 @@ export const RoomyIcon = ({ width = '2rem', height = '2rem', className , onClick
     </svg>
 );
 
-export const ListIcon = ({ width = '2rem', height = '2rem', className , onClick}) => (
+export const ListIcon = ({ width = '2rem', height = '2rem', className, onClick }) => (
     <svg
         className={className}
         width={width}
@@ -163,6 +163,14 @@ export const DownIcon = ({ width = '1.1rem', height = '1.1rem', className }) => 
     <svg viewBox="0 0 11 11" className={className} width={width} height={height} fill="currentColor">
         <g>
             <path d="m11 2.5c0 .1 0 .2-.1.3l-5 6c-.1.1-.3.2-.4.2s-.3-.1-.4-.2l-5-6c-.2-.2-.1-.5.1-.7s.5-.1.7.1l4.6 5.5 4.6-5.5c.2-.2.5-.2.7-.1.1.1.2.3.2.4z"></path>
+        </g>
+    </svg>
+);
+
+export const TickIcon = ({ width = '0.9rem', height = '0.9rem', className }) => (
+    <svg viewBox="0 0 12 12" className={className} width={width} height={height} fill="currentColor">
+        <g>
+            <path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path>
         </g>
     </svg>
 );

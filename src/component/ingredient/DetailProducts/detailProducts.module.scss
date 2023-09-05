@@ -194,7 +194,7 @@
     margin-left: 5px;
     padding: 3px 7px;
     font-size: 1.4rem;
-    background: rgba(208,1,27,.08);
+    background: rgba(208, 1, 27, 0.08);
     color: #ee4d2d;
     cursor: default;
 
@@ -240,7 +240,7 @@
     text-transform: capitalize;
     flex-shrink: 0;
 }
-.price-trans{
+.price-trans {
     cursor: pointer;
 }
 .icon-down {
@@ -269,6 +269,7 @@
     margin-left: 10px;
 }
 .product-variation {
+    position: relative;
     margin: 0 8px 8px 0 !important;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
@@ -457,19 +458,41 @@
     border: 1px solid #c4c3c373 !important;
     border-radius: 5px !important;
 }
-.giaohang{
+.giaohang {
     opacity: 5;
     width: 500px;
     background-color: #fff;
     border: 1px solid #c4c3c35a !important;
 }
-.speed-trans{
+.speed-trans {
     display: flex;
     justify-content: space-between;
     padding: 8px 15px;
 }
-.time-trans{
+.time-trans {
     margin-top: 5px;
     font-size: 1.2rem;
     color: #929292;
+}
+
+// active button
+.active-btn{
+    border-color: #ee4d2d;
+}
+.product-variation__tick {
+    // display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 1.4rem solid red;
+    border-left: 1.4rem solid transparent;
+    color: #000;
+}
+.icon-tick{
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    color: #fff;
 }
