@@ -15,11 +15,15 @@ function Login() {
 
         const itemName = localStorage.getItem('Name') ? JSON.parse(localStorage.getItem('Name')) : [];
         const itemPass = localStorage.getItem('Passwork') ? JSON.parse(localStorage.getItem('Passwork')) : [];
+        const itemUser = localStorage.getItem('NameUser') ? JSON.parse(localStorage.getItem('NameUser')) : [];
 
         for (let i = 0; i < itemName.length; i++) {
             if (ipName == itemName[i] && ipPass == itemPass[i]) {
                 alert('Đăng nhập thành công');
                 window.location = 'http://localhost:3000/Lazada'
+                localStorage.setItem('Status', JSON.stringify('Có'));
+                localStorage.setItem('UserName', JSON.stringify(itemUser[i]));
+                localStorage.setItem('TaiKhoan', JSON.stringify(ipName));
             }
         }
     };

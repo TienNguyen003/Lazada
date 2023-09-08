@@ -20,7 +20,8 @@
 .register,
 .select,
 .care,
-.check {
+.check,
+.account {
     color: #9e9e9e !important;
     cursor: pointer;
     font-weight: bold;
@@ -146,7 +147,7 @@
     transform: translateX(-65%);
     padding: 10px 15px;
     width: 240px;
-    border:1px solid #bfbfbf;
+    border: 1px solid #bfbfbf;
     border-radius: 10px;
     background-color: #fff;
 }
@@ -170,7 +171,7 @@
     align-items: center;
     margin: 5px 0;
 }
-.icon-show{
+.icon-show {
     width: 20px;
 }
 .txtCus {
@@ -188,4 +189,27 @@
 .visible {
     display: block;
     z-index: 10;
+}
+
+.account{
+    position: relative;
+}
+.navigation-acc{
+    position: absolute;
+    top: 30px;
+    padding: 20px 15px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #e0dcdc6a;
+    border-radius: 10px;
+
+    &:hover{
+        color: #9e9e9e !important;
+    }
+}
+.account-user{
+    margin-bottom: 13px;
+}
+.log-out{
+    margin-top: 13px;
 }

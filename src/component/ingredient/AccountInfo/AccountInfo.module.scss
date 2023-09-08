@@ -1,0 +1,84 @@
+.info {
+    display: flex;
+    margin: 0 164px;
+    padding: 20px 0 300px;
+}
+.introduction {
+    width: 250px;
+}
+.member-info {
+    font-size: 1.2rem;
+    color: #424242;
+}
+.manage {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    color: #424242;
+    cursor: pointer;
+}
+.txt-manage {
+    color: #1a9cb7;
+}
+.detail-manage {
+    margin-left: 16px;
+}
+.txt {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    color: #424242;
+    cursor: pointer;
+}
+.manage-acc {
+    flex: 1;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.info-acc {
+    padding: 16px;
+    width: 320px;
+    height: 214px;
+    background-color: #fff;
+}
+.txt-manage-acc{
+    height: 60px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #424242;
+}
+.edit-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    height: 20px;
+    font-size: 1.6rem;
+    color: #212121;
+}
+.txt-edit{
+    margin-right: 8px;
+}
+.link-edit{
+    margin-left: 8px;
+    font-size: 1.2rem;
+    color: #1a9cb7;
+    cursor: pointer;
+}
+.member-info-manage{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #424242;
+}
+.contact-info{
+    display: flex;
+    width: 65%;
+    height: 214px;
+    background-color: #fff;
+}
+.address{
+    flex: 1;
+    margin-top: 50px;
+    padding-left: 10px;
+    height: 120px;
+    border-left: 2px solid #eff0f5;
+}

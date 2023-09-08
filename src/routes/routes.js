@@ -14,6 +14,7 @@ import LinkApp from '../component/ingredient/LinkApp/linkApp';
 import SearchResults from '../component/ingredient/SeachResult/seachResult';
 import ProductsResults from '../component/ingredient/ProductsResult/productsResult';
 import DetailLazMall from '../component/ingredient/DetailLazMall/detailLazMall';
+import AccountInfo from '../component/ingredient/AccountInfo/AccountInfo';
 
 // public routes
 const publicRoutes = [
@@ -30,6 +31,7 @@ const publicRoutes = [
     { path: routesConfig.SearchResults, component: SearchResults },
     { path: routesConfig.ProductsResults, component: ProductsResults },
     { path: routesConfig.DetailLazMall, component: DetailLazMall },
+    { path: routesConfig.AccountInfo, component: AccountInfo },
 ];
 const privateRoutes = [];
 

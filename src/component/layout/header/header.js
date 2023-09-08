@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,6 +14,12 @@ const cx = classNames.bind(styles);
 function Header() {
     const [input, setInput] = useState('');
     const [inputChange, setInputChange] = useState('');
+    const [statusLog, setStatusLog] = useState(
+        localStorage.getItem('Status') ? JSON.parse(localStorage.getItem('Status')) : '',
+    );
+    const [nameUser, setNameUser] = useState(
+        localStorage.getItem('UserName') ? JSON.parse(localStorage.getItem('UserName')) : '',
+    );
 
     const refSpare = useRef();
     const refCare = useRef();
@@ -47,16 +54,33 @@ function Header() {
                         Kiểm tra đơn hàng
                     </Link>
                 </div>
-                <div className={cx('login')}>
-                    <Link to={routesConfig.Login} className={cx('login')}>
-                        Đăng nhập
-                    </Link>
-                </div>
-                <div className={cx('register')}>
-                    <Link to={routesConfig.Register} className={cx('register')}>
-                        Đăng ký
-                    </Link>
-                </div>
+                {statusLog == 'Có' ? (
+                    <div className={cx('account')}>TÀI KHOẢN {nameUser}
+                        <div className={cx('navigation-acc')}>
+                            <div className={cx('account-user')}>
+                                <p></p>
+                                <p>Quản lý tài khoản</p>
+                            </div>
+                            <div className={cx('log-out')}>
+                                <p></p>
+                                <p>Đăng xuất</p>
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    <>
+                        <div className={cx('login')}>
+                            <Link to={routesConfig.Login} className={cx('login')}>
+                                Đăng nhập
+                            </Link>
+                        </div>
+                        <div className={cx('register')}>
+                            <Link to={routesConfig.Register} className={cx('register')}>
+                                Đăng ký
+                            </Link>
+                        </div>
+                    </>
+                )}
                 <div className={cx('select')}>Chọn ngôn ngữ</div>
             </div>
             <div className={cx('header')}>
