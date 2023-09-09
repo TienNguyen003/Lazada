@@ -61,6 +61,16 @@ function DetailProducts() {
         e.target.classList.add('detailProducts_active-img__Kh1Vf');
     };
 
+    const handleClickAddCart = () => {
+        const btn = document.querySelectorAll('.detailProducts_product-variation__eU1Fw');
+        for(let i = 0; i < btn.length; i++) {
+            if(btn[i].className.includes('detailProducts_active-btn__8F1bN')){
+                const text = btn[i].querySelector('.Button_title__vdxIi').innerHTML;
+                console.log(text.slice(0, (text.indexOf('<'))));
+            }
+        }
+    }
+
     const items = [];
     for (let i = 0; i < Math.floor(data.shop_rating); i++) {
         items.push(<StarIcon key={i} className={cx('icon')} />);
@@ -101,7 +111,6 @@ function DetailProducts() {
         } else {
             const tick = e.target.querySelector('.detailProducts_product-variation__tick__yAaGU')
             tick.style.display = 'block';
-            console.log(tick);
             tick.innerHTML = `<svg class="icon-tick" viewBox="0 0 12 12" fill="currentColor"><g><path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path></g></svg>`;
             e.target.classList.add('detailProducts_active-btn__8F1bN');
 
@@ -353,7 +362,7 @@ function DetailProducts() {
                                 src="https://icones.pro/wp-content/uploads/2021/05/icone-de-panier-orange.png"
                                 alt="Cart"
                             />
-                            <p>Thêm vào giỏ hàng</p>
+                            <p onClick={handleClickAddCart}>Thêm vào giỏ hàng</p>
                         </div>
                         <div className={cx('buy', 'now')}>Mua ngay</div>
                     </div>

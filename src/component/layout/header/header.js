@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserTie, faTruck, faBoxOpen, faCreditCard } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { SearchIcon } from '../../icons/icon';
 import routesConfig from '../../../config/routes';
@@ -20,34 +20,93 @@ function Header() {
     const [nameUser, setNameUser] = useState(
         localStorage.getItem('UserName') ? JSON.parse(localStorage.getItem('UserName')) : '',
     );
-
-    const refSpare = useRef();
-    const refCare = useRef();
+    console.debug(setNameUser);
 
     useEffect(() => {
         setInput(inputChange);
     }, [inputChange]);
 
-    const handelShowSpare = () => {
-        refSpare.current.classList.toggle('header_visible__wTqLE');
-    };
-    const handelShowCare = () => {
-        refCare.current.classList.toggle('header_visible__wTqLE');
+    const handleClickLogOut = (e) => {
+        setStatusLog('Khong');
     };
 
     return (
         <>
             <div className={cx('links-list')}>
-                <div className={cx('spare')} onClick={() => handelShowSpare()}>
+                <div className={cx('spare')}>
                     Tiết kiệm hơn với ứng dụng
+                    <div className={cx('show-clickSpare')}>
+                        <div className={cx('title-click')}>Tải ứng dụng để có trải nghiệm tốt nhất</div>
+                        <div className={cx('infoSpare')}>
+                            <img
+                                className={cx('qr')}
+                                src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1Grg0txYaK1RjSZFnXXa80pXa.png"
+                                alt="qr code"
+                            />
+                            <div className={cx('dowapp-benefits')}>
+                                <Link to={routesConfig.LinkApp} className={cx('sell')}>
+                                    <p className={cx('detail__benefits')}>
+                                        Mua sắm thông qua ứng dụng của chúng tôi để được:
+                                    </p>
+                                    <ul className={cx('detail__benefits-des')}>
+                                        <li className={cx('benefits-des-detail')}>Voucher độc quyền</li>
+                                        <li className={cx('benefits-des-detail')}>Deal tốt hơn</li>
+                                        <li className={cx('benefits-des-detail')}>Các khuyến mãi chỉ dành cho bạn</li>
+                                        <li className={cx('benefits-des-detail')}>Luôn cập nhật đầu tiên</li>
+                                    </ul>
+                                </Link>
+                            </div>
+                        </div>
+                        <input className={cx('ip-exp')} placeholder="eg. 0123456789" />
+                        <div className={cx('header__down')}>
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
+                                className={cx('down__img', 'google')}
+                                alt="img"
+                            />
+                            <img
+                                src="https://www.techhub.in.th/wp-content/uploads/2013/12/appstore.jpg"
+                                className={cx('down__img', 'appstore')}
+                                alt="img"
+                            />
+                        </div>
+                        <p className={cx('nameME')}>TienNguyen available</p>
+                    </div>
                 </div>
                 <div className={cx('sell')}>
                     <Link to={routesConfig.SalesTogether} className={cx('sell')}>
                         Bán hàng cùng lazada
                     </Link>
                 </div>
-                <div className={cx('care')} onClick={() => handelShowCare()}>
+                <div className={cx('care')}>
                     Chăm sóc khách hàng
+                    <div className={cx('show-care')}>
+                        <div className={cx('custom-info')}>
+                            <FontAwesomeIcon icon={faUserTie} className={cx('icon-show')}></FontAwesomeIcon>
+                            <Link to={routesConfig.CheckOrder} className={cx('txtCus')}>
+                                Trung tâm hỗ trợ
+                            </Link>
+                        </div>
+                        <div className={cx('custom-info')}>
+                            <FontAwesomeIcon icon={faCreditCard} className={cx('icon-show')}></FontAwesomeIcon>
+
+                            <Link to={routesConfig.PaymentOrder} className={cx('txtCus')}>
+                                Đơn hàng & Thanh toán
+                            </Link>
+                        </div>
+                        <div className={cx('custom-info')}>
+                            <FontAwesomeIcon icon={faTruck} className={cx('icon-show')} />
+                            <Link to={routesConfig.Delivery} className={cx('txtCus')}>
+                                Giao hàng & Nhận hàng
+                            </Link>
+                        </div>
+                        <div className={cx('custom-info')}>
+                            <FontAwesomeIcon icon={faBoxOpen} className={cx('icon-show')} />
+                            <Link to={routesConfig.CheckOrder} className={cx('txtCus')}>
+                                Đổi trả hàng & Hoàn tiền
+                            </Link>
+                        </div>
+                    </div>
                 </div>
                 <div className={cx('check')}>
                     <Link to={routesConfig.CheckOrder} className={cx('check')}>
@@ -55,15 +114,20 @@ function Header() {
                     </Link>
                 </div>
                 {statusLog == 'Có' ? (
-                    <div className={cx('account')}>TÀI KHOẢN {nameUser}
+                    <div className={cx('account')}>
+                        <p className={cx('name-acc')}>TÀI KHOẢN {nameUser}</p>
                         <div className={cx('navigation-acc')}>
                             <div className={cx('account-user')}>
                                 <p></p>
-                                <p>Quản lý tài khoản</p>
+                                <Link to={routesConfig.AccountInfo} className={cx('txt')}>
+                                    Quản lý tài khoản
+                                </Link>
                             </div>
                             <div className={cx('log-out')}>
                                 <p></p>
-                                <p>Đăng xuất</p>
+                                <p className={cx('txt')} onClick={(e) => handleClickLogOut(e)}>
+                                    Đăng xuất
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -113,74 +177,23 @@ function Header() {
                     </Link>
                 </div>
                 <div className={cx('cart')}>
-                    <img
-                        className={cx('cart-img')}
-                        src="//lzd-img-global.slatic.net/g/tps/tfs/TB1xEeTdBGw3KVjSZFDXXXWEpXa-75-66.png"
-                        alt="Cart"
-                    />
-                </div>
-            </div>
-
-            <div className={cx('show-clickSpare')} ref={refSpare}>
-                <div className={cx('title-click')}>Tải ứng dụng để có trải nghiệm tốt nhất</div>
-                <div className={cx('infoSpare')}>
-                    <img
-                        className={cx('qr')}
-                        src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1Grg0txYaK1RjSZFnXXa80pXa.png"
-                        alt="qr code"
-                    />
-                    <div className={cx('dowapp-benefits')}>
-                        <Link to={routesConfig.LinkApp} className={cx('sell')}>
-                            <p className={cx('detail__benefits')}>Mua sắm thông qua ứng dụng của chúng tôi để được:</p>
-                            <ul className={cx('detail__benefits-des')}>
-                                <li className={cx('benefits-des-detail')}>Voucher độc quyền</li>
-                                <li className={cx('benefits-des-detail')}>Deal tốt hơn</li>
-                                <li className={cx('benefits-des-detail')}>Các khuyến mãi chỉ dành cho bạn</li>
-                                <li className={cx('benefits-des-detail')}>Luôn cập nhật đầu tiên</li>
-                            </ul>
+                    {statusLog == 'Có' ? (
+                        <Link to={routesConfig.CartProduct}>
+                            <img
+                                className={cx('cart-img')}
+                                src="//lzd-img-global.slatic.net/g/tps/tfs/TB1xEeTdBGw3KVjSZFDXXXWEpXa-75-66.png"
+                                alt="Cart"
+                            />
                         </Link>
-                    </div>
-                </div>
-                <input className={cx('ip-exp')} placeholder="eg. 0123456789" />
-                <div className={cx('header__down')}>
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
-                        className={cx('down__img', 'google')}
-                        alt="img"
-                    />
-                    <img
-                        src="https://www.techhub.in.th/wp-content/uploads/2013/12/appstore.jpg"
-                        className={cx('down__img', 'appstore')}
-                        alt="img"
-                    />
-                </div>
-                <p className={cx('nameME')}>TienNguyen available</p>
-            </div>
-            <div className={cx('show-care')} ref={refCare}>
-                <div className={cx('custom-info')}>
-                    <FontAwesomeIcon icon={faUserTie} className={cx('icon-show')}></FontAwesomeIcon>
-                    <Link to={routesConfig.CheckOrder} className={cx('txtCus')}>
-                        Trung tâm hỗ trợ
-                    </Link>
-                </div>
-                <div className={cx('custom-info')}>
-                    <FontAwesomeIcon icon={faCreditCard} className={cx('icon-show')}></FontAwesomeIcon>
-
-                    <Link to={routesConfig.PaymentOrder} className={cx('txtCus')}>
-                        Đơn hàng & Thanh toán
-                    </Link>
-                </div>
-                <div className={cx('custom-info')}>
-                    <FontAwesomeIcon icon={faTruck} className={cx('icon-show')} />
-                    <Link to={routesConfig.Delivery} className={cx('txtCus')}>
-                        Giao hàng & Nhận hàng
-                    </Link>
-                </div>
-                <div className={cx('custom-info')}>
-                    <FontAwesomeIcon icon={faBoxOpen} className={cx('icon-show')} />
-                    <Link to={routesConfig.CheckOrder} className={cx('txtCus')}>
-                        Đổi trả hàng & Hoàn tiền
-                    </Link>
+                    ) : (
+                        <Link to={routesConfig.Login}>
+                            <img
+                                className={cx('cart-img')}
+                                src="//lzd-img-global.slatic.net/g/tps/tfs/TB1xEeTdBGw3KVjSZFDXXXWEpXa-75-66.png"
+                                alt="Cart"
+                            />
+                        </Link>
+                    )}
                 </div>
             </div>
         </>

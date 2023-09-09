@@ -10,6 +10,7 @@ const routes = {
     LazFlash: '/LazFlash',
     LinkApp: '/LinkApp',
     AccountInfo: '/AccountInfo',
+    CartProduct: '/CartProduct',
     SearchResults: '/SearchResults/:nickname',
     ProductsResults: '/ProductsResults/:nickname',
     DetailLazMall: '/DetailLazMall/:nickname',
