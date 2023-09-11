@@ -23,6 +23,10 @@ function DetailProducts() {
     const getDay = date.getDate();
     const getMonth = date.getMonth();
 
+    const detailProducts = localStorage.getItem('detailProducts')
+        ? JSON.parse(localStorage.getItem('detailProducts'))
+        : [];
+
     const url = decodeURIComponent(useLocation().pathname.replace('/ProductsResults/@', ''));
     useEffect(() => {
         apiP.map((item) => {
@@ -63,13 +67,21 @@ function DetailProducts() {
 
     const handleClickAddCart = () => {
         const btn = document.querySelectorAll('.detailProducts_product-variation__eU1Fw');
-        for(let i = 0; i < btn.length; i++) {
-            if(btn[i].className.includes('detailProducts_active-btn__8F1bN')){
-                const text = btn[i].querySelector('.Button_title__vdxIi').innerHTML;
-                console.log(text.slice(0, (text.indexOf('<'))));
+        for (let i = 0; i < btn.length; i++) {
+            if (btn[i].className.includes('detailProducts_active-btn__8F1bN')) {
+                detailProducts.push([
+                    data.name,
+                    data.price_max.toString().slice(0, -5).toLocaleString('vi-VN'),
+                    document.querySelector('.detailProducts_quanti-updown__zfz7y').value,
+                    'https://down-vn.img.susercontent.com/file/' + data.image,
+                ]);
+                // Sử dụng Set để loại bỏ các phần tử trùng lặp
+                let uniqueArray = [...new Set(detailProducts.map(JSON.stringify))].map(JSON.parse);
+
+                localStorage.setItem('detailProducts', JSON.stringify(uniqueArray));
             }
         }
-    }
+    };
 
     const items = [];
     for (let i = 0; i < Math.floor(data.shop_rating); i++) {
@@ -109,7 +121,7 @@ function DetailProducts() {
                 }
             });
         } else {
-            const tick = e.target.querySelector('.detailProducts_product-variation__tick__yAaGU')
+            const tick = e.target.querySelector('.detailProducts_product-variation__tick__yAaGU');
             tick.style.display = 'block';
             tick.innerHTML = `<svg class="icon-tick" viewBox="0 0 12 12" fill="currentColor"><g><path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path></g></svg>`;
             e.target.classList.add('detailProducts_active-btn__8F1bN');
