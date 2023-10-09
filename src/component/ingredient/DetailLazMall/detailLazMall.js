@@ -16,7 +16,7 @@ const cx = classNames.bind(styles);
 function DetailLazMall() {
     let arr = [];
     let arrCate = [];
-    const url = useLocation().pathname.replace('/DetailLazMall/@', '');
+    const url = useLocation().pathname.replace('/Lazada/DetailLazMall/@', '');
 
     apiProduct.map((item) => {
         if (item.data.id == url) {

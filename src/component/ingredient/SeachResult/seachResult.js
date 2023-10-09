@@ -12,7 +12,7 @@ import styles from './seachResult.module.scss';
 const cx = classNames.bind(styles);
 
 function SearchResult() {
-    const url = decodeURIComponent(useLocation().pathname.replace('/SearchResults/@', ''));
+    const url = decodeURIComponent(useLocation().pathname.replace('/Lazada/SearchResults/@', ''));
 
     const handleClickListIcon = (e) => {
         const roomy = document.querySelector('.seachResult_icon-roomy__DPPDc');
