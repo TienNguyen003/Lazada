@@ -27,7 +27,7 @@ function DetailProducts() {
         ? JSON.parse(localStorage.getItem('detailProducts'))
         : [];
 
-    const url = decodeURIComponent(useLocation().pathname.replace('/ProductsResults/@', ''));
+    const url = decodeURIComponent(useLocation().pathname.replace('/Lazada/ProductsResults/@', ''));
     useEffect(() => {
         apiP.map((item) => {
             if (item.itemid == url) {
@@ -43,7 +43,7 @@ function DetailProducts() {
         });
     }, [apiCateP, apiP, url]);
 
-    console.clear();
+    // console.clear();
 
     const handleDown = () => {
         const quantity = document.querySelector('.detailProducts_quanti-updown__zfz7y');
@@ -144,9 +144,9 @@ function DetailProducts() {
             <div className={cx('detail-products')}>
                 <div className={cx('img-product')}>
                     <img className={cx('img')} src={'https://down-vn.img.susercontent.com/file/' + data.image} alt="" />
-                    <div className={cx('list')}>
+                    <div className={cx('list')}>                        
                         {data.images !== undefined &&
-                            data.images.map((item, index) => {
+                            data.images.map((item, index) => {                                
                                 return (
                                     <img
                                         key={index}
