@@ -24,7 +24,7 @@ function WantToo() {
                 {api.slice(x, y).map((item, id) => {
                     return (
                         <div className={cx('card-items')} key={id}>
-                            <Link to={`/ProductsResults/@${item.itemid}`}>
+                            <Link to={`/Lazada/ProductsResults/@${item.itemid}`}>
                                 <div className={cx('card-item')}>
                                     <div className={cx('img-background')}>
                                         <img

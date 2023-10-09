@@ -165,7 +165,7 @@ function Header() {
                         onBlur={(e) => setInputChange(e.target.value)}
                     />
                     <Link
-                        to={`/SearchResults/@${input}`}
+                        to={`/Lazada/SearchResults/@${input}`}
                         className={cx('search-icon')}
                         onClick={() => {
                             setInput(inputChange);
