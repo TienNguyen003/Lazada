@@ -115,7 +115,7 @@ function Lazflash() {
                 {api.slice(300, 318).map((item) => {
                     return (
                         <div className={cx('flash-unit')} key={item.itemid}>
-                            <Link to={`/ProductsResults/@${item.itemid}`}>
+                            <Link to={`/Lazada/ProductsResults/@${item.itemid}`}>
                                 <div className={cx('flash-unit-image')}>
                                     <img
                                         className={cx('image')}

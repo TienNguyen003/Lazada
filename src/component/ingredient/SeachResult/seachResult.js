@@ -65,7 +65,7 @@ function SearchResult() {
                 {api.map((item) => {
                     return item.name.includes(url) ? (
                         <div className={cx('card-items')} key={item.itemid}>
-                            <Link to={`/ProductsResults/@${item.itemid}`}>
+                            <Link to={`/Lazada/ProductsResults/@${item.itemid}`}>
                                 <div className={cx('card-item')}>
                                     <div className={cx('img-background')}>
                                         <img

@@ -28,7 +28,7 @@ function CategoryList() {
                 {category.slice(0, 16).map((item) => {
                     return (
                         <div key={item.catid}>
-                            <Link to={`/DetailLazMall/@${item.catid}`} className={cx('cate-item')}>
+                            <Link to={`/Lazada/DetailLazMall/@${item.catid}`} className={cx('cate-item')}>
                                 <img
                                     className={cx('cate-img')}
                                     src={'https://down-vn.img.susercontent.com/file/' + item.image}

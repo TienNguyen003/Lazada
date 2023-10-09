@@ -23,7 +23,7 @@ function ExclusivelyYou() {
                 {api.slice(0, demY).map((item) => {
                     return (
                         <div className={cx('card-items')} key={item.itemid}>
-                            <Link to={`/ProductsResults/@${item.itemid}`}>
+                            <Link to={`/Lazada/ProductsResults/@${item.itemid}`}>
                                 <div className={cx('card-item')}>
                                     <div className={cx('img-background')}>
                                         <img

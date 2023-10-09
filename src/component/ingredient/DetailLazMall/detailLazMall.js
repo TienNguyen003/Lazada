@@ -200,7 +200,7 @@ function DetailLazMall() {
                             ? arr.map((item, id) => {
                                   return (
                                       <Link
-                                          to={`/ProductsResults/@${item.itemid}`}
+                                          to={`/Lazada/ProductsResults/@${item.itemid}`}
                                           key={id}
                                           className={cx('product-item')}
                                       >
