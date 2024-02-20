@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Lazada/static/css/main.fbafd5a2.css",
-    "main.js": "/Lazada/static/js/main.f91c0fc7.js",
+    "main.js": "/Lazada/static/js/main.7fda7747.js",
     "static/js/787.572cd31c.chunk.js": "/Lazada/static/js/787.572cd31c.chunk.js",
     "index.html": "/Lazada/index.html",
     "main.fbafd5a2.css.map": "/Lazada/static/css/main.fbafd5a2.css.map",
-    "main.f91c0fc7.js.map": "/Lazada/static/js/main.f91c0fc7.js.map",
+    "main.7fda7747.js.map": "/Lazada/static/js/main.7fda7747.js.map",
     "787.572cd31c.chunk.js.map": "/Lazada/static/js/787.572cd31c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbafd5a2.css",
-    "static/js/main.f91c0fc7.js"
+    "static/js/main.7fda7747.js"
   ]
 }
