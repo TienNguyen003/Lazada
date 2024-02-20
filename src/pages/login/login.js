@@ -20,7 +20,7 @@ function Login() {
         for (let i = 0; i < itemName.length; i++) {
             if (ipName == itemName[i] && ipPass == itemPass[i]) {
                 alert('Đăng nhập thành công');
-                window.location = 'http://localhost:3000/Lazada'
+                window.location = 'https://tiennguyen003.github.io/Lazada'
                 localStorage.setItem('Status', JSON.stringify('Có'));
                 localStorage.setItem('UserName', JSON.stringify(itemUser[i]));
                 localStorage.setItem('TaiKhoan', JSON.stringify(ipName));
